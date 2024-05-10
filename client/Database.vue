@@ -673,7 +673,7 @@
 					})
 					.then(response => {
 						console.log("一併刪除成功（全部搜索结果）", response.data);
-						this.getSearch(); // 重新获取数据
+						this.getSearch();
 					})
 					.catch(error => {
 						console.error("一併刪除失败（全部搜索结果）", error);
