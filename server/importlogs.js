@@ -17,7 +17,6 @@ function clearUploadsDir() {
       return;
     }
 
-    // 遍历目录中的所有文件并删除
     files.forEach(file => {
       const filePath = path.join(uploadDir, file);
       fs.unlink(filePath, err => {
