@@ -16,7 +16,6 @@ router.post("/:path/sql-search", (req, res) => {
 	} = req.body;
 	const tableName = req.params.path;
 
-	// 使用傳入的 SQL 查询语句
 	const selectQuery = `SELECT * FROM ${tableName} WHERE ${sqlQuery}`;
 
 	const connection = mysql.createConnection({
